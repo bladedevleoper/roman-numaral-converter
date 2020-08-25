@@ -1,0 +1,27 @@
+PHPUnit Notes:
+--------------
+
+Will need to make a cheat sheet on this when I am done.
+
+commands to run all tests within the suite:
+
+from composer:
+
+> ./vendor/bin/phpunit/ tests
+
+this will run all tests within the directory for that suite.
+
+
+----------------------------------------------------------------------
+
+can run the following to run a single test within a specific class
+
+> ./vendor/bin/phpunit --filter nameOfFunction
+
+
+----------------------------------------------------------------------
+
+We can also tell our tests to expect an exception:
+
+//provide this with the name space of the Exception Class we want to throw
+$this->expectException(Exception::class); 
